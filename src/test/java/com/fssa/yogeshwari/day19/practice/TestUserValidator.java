@@ -26,7 +26,7 @@ public class TestUserValidator {
 	
 @Test
 	public void testValidName() {
-		Assertions.assertTrue(UserValidator.nameValidator("sandeepok"));
+		Assertions.assertTrue(UserValidator.nameValidator("yogeshwari"));
 	}
 //  for invalid name
 	
@@ -34,7 +34,7 @@ public class TestUserValidator {
 
 	public void testInvalidName() {
 		try {
-			UserValidator.nameValidator("a");
+			UserValidator.nameValidator("y");
 			Assertions.fail("Validatename failed");
 		} catch (IllegalArgumentException ex) {
 			Assertions.assertEquals("The name should be in minimum 2 letters", ex.getMessage());
@@ -45,7 +45,7 @@ public class TestUserValidator {
 @Test
 
 	public void testValidEmail() {
-		Assertions.assertTrue(UserValidator.emailValidator("sandeep@gmail.com"));
+		Assertions.assertTrue(UserValidator.emailValidator("yogeshwari@gmail.com"));
 	}
 //  for invalid email
 	
@@ -53,7 +53,7 @@ public class TestUserValidator {
 
 	public void testInvalidEmail() {
 		try {
-			UserValidator.emailValidator("sandeepgmail");
+			UserValidator.emailValidator("yogeshwarigmail");
 			Assertions.fail("Validateemail failed");
 		} catch (IllegalArgumentException ex) {
 			Assertions.assertEquals("The email is invalid", ex.getMessage());
@@ -64,7 +64,7 @@ public class TestUserValidator {
 @Test
 
 	public void testValidPassword() {
-		Assertions.assertTrue(UserValidator.passwordValidator("sand@#99Sasn"));
+		Assertions.assertTrue(UserValidator.passwordValidator("yogeshwari@#56dond"));
 	}
 //  for invalid id
 	
@@ -72,7 +72,7 @@ public class TestUserValidator {
 
 	public void testInvalidPassword() {
 		try {
-			UserValidator.passwordValidator("sand");
+			UserValidator.passwordValidator("yogi");
 			Assertions.fail("Validatepassword failed");
 		} catch (IllegalArgumentException ex) {
 			Assertions.assertEquals("The password is invalid", ex.getMessage());
