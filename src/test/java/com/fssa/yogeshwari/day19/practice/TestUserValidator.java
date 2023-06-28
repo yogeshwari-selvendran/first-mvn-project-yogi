@@ -1,4 +1,6 @@
 package com.fssa.yogeshwari.day19.practice;
+
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 public class TestUserValidator {
@@ -64,7 +66,7 @@ public class TestUserValidator {
 @Test
 
 	public void testValidPassword() {
-		Assertions.assertTrue(UserValidator.passwordValidator("yogeshwari@#56dond"));
+		Assertions.assertTrue(UserValidator.passwordValidator("yogi@#99Yogi"));
 	}
 //  for invalid id
 	
